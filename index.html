@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="styles.css">
+<title>Фільми</title>
+</head>
+
+<body>
+
+<h1>Додати Фільми</h1>
+
+<form id="addMovieForm">
+
+  <label for="id">Код:</label> <br>
+  <input type="text" id="id" name="id" required><br>
+
+  <label for="title">Назва:</label><br>
+  <input type="text" id="title" name="title" required><br>
+
+  <label for="director">Директор:</label><br>
+  <input type="text" id="director" name="director" required><br>
+
+  <label for="trailerURL">URL-трейлеру:</label><br>
+  <input type="url" id="trailerURL" name="trailerURL" required><br>
+
+  <label for="releaseYear">Рік випуску:</label><br>
+  <input type="number" id="releaseYear" name="releaseYear" min="1900" max="2024" required><br>
+  
+  <label for="boxOffice">Касові збори:</label><br>
+  <input type="number" id="boxOffice" name="boxOffice" min="0" required><br><br>
+
+  <button type="submit">Додати Фільм</button>
+</form>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
