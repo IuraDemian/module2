@@ -25,15 +25,15 @@ class MovieCollection
   
     addMovie(movie) 
     {
-        if (!this.movies.some(existingMovie => existingMovie.title === movie.title && existingMovie.releaseYear === movie.releaseYear)) 
+        if (!this.movies.some(existingMovie => existingMovie.id === movie.id)) 
         {
             this.movies.push(movie);
-            alert(`фільм доданий ${movie.title}`);
+            alert(`фільм ${movie.title} доданий.`);
             return true;
         } 
         else 
         {
-            alert(`фільм уже доданий(код) ${movie.title}`);
+            alert(`фільм ${movie.title} уже доданий.`);
             return false;
         }
     }
